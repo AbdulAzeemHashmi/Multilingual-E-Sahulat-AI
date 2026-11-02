@@ -13,7 +13,7 @@
       "abstention_recall": 0.9524,
       "abstention_f1": 0.9756,
       "cross_script_consistency": 1.0,
-      "avg_latency_ms": 1.02,
+      "avg_latency_ms": 0.8,
       "by_language": {
         "roman_ur": {
           "count": 35,
@@ -48,7 +48,7 @@
       "abstention_recall": 1.0,
       "abstention_f1": 0.9767,
       "cross_script_consistency": 1.0,
-      "avg_latency_ms": 57.84,
+      "avg_latency_ms": 17.48,
       "by_language": {
         "roman_ur": {
           "count": 35,
@@ -83,7 +83,7 @@
       "abstention_recall": 1.0,
       "abstention_f1": 0.9545,
       "cross_script_consistency": 1.0,
-      "avg_latency_ms": 38.31,
+      "avg_latency_ms": 20.8,
       "by_language": {
         "roman_ur": {
           "count": 35,
@@ -120,7 +120,7 @@
       "abstention_recall": 0.9524,
       "abstention_f1": 0.9756,
       "cross_script_consistency": 0.9,
-      "avg_latency_ms": 1.18,
+      "avg_latency_ms": 0.57,
       "by_language": {
         "en": {
           "count": 33,
@@ -155,7 +155,7 @@
       "abstention_recall": 1.0,
       "abstention_f1": 0.8936,
       "cross_script_consistency": 0.7333,
-      "avg_latency_ms": 33.61,
+      "avg_latency_ms": 18.27,
       "by_language": {
         "en": {
           "count": 33,
@@ -190,7 +190,7 @@
       "abstention_recall": 1.0,
       "abstention_f1": 0.8571,
       "cross_script_consistency": 0.8,
-      "avg_latency_ms": 31.96,
+      "avg_latency_ms": 18.73,
       "by_language": {
         "en": {
           "count": 33,

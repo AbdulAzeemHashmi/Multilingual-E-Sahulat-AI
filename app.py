@@ -30,6 +30,7 @@ st.set_page_config(
 # Custom Styling for Pakistani Public Service Theme (Green/Navy) & Urdu Nastaliq font
 st.markdown("""
 <style>
+    /* Offline-safe: Google Fonts loads when online, system fonts used as fallback */
     @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Inter:wght@400;600;700&display=swap');
     
     .main-title {
@@ -158,22 +159,29 @@ tab1, tab2, tab3, tab4 = st.tabs([
 with tab1:
     st.markdown("##### Ask any question regarding Pakistani passport procedures, validity, fees, or requirements:")
     
-    # Example Query Pills
+    # Example Query Pills - use session_state so selected example persists across reruns
     col_e1, col_e2, col_e3, col_e4, col_e5 = st.columns(5)
-    selected_example = None
-    if col_e1.button("🇵🇰 Urdu: پاسپورٹ کی تجدید"):
-        selected_example = "پاسپورٹ کی تجدید کے لیے کون سی دستاویزات درکار ہیں؟"
-    if col_e2.button("🔤 Roman: Passport renew"):
-        selected_example = "Passport renew karwanay ke liye kya documents chahiye?"
-    if col_e3.button("🇬🇧 English: Normal time"):
-        selected_example = "What processing time is listed for a normal MRP?"
-    if col_e4.button("⚠️ Ambiguous: Fee"):
-        selected_example = "Kitni fee hai?"
-    if col_e5.button("❌ Out of Domain: Cricket"):
-        selected_example = "Who will win the next Cricket World Cup?"
+    if 'example_query' not in st.session_state:
+        st.session_state['example_query'] = ""
+    if col_e1.button("\U0001f1f5\U0001f1f0 Urdu: پاسپورٹ کی تجدید"):
+        st.session_state['example_query'] = "پاسپورٹ کی تجدید کے لیے کون سی دستاویزات درکار ہیں؟"
+    if col_e2.button("\U0001f524 Roman: Passport renew"):
+        st.session_state['example_query'] = "Passport renew karwanay ke liye kya documents chahiye?"
+    if col_e3.button("\U0001f1ec\U0001f1e7 English: Normal time"):
+        st.session_state['example_query'] = "What processing time is listed for a normal MRP?"
+    if col_e4.button("\u26a0\ufe0f Ambiguous: Fee"):
+        st.session_state['example_query'] = "Kitni fee hai?"
+    if col_e5.button("\u274c Out of Domain: Cricket"):
+        st.session_state['example_query'] = "Who will win the next Cricket World Cup?"
 
-    default_query = selected_example if selected_example else ""
-    user_query = st.text_input("Enter question in Urdu script, Roman Urdu, English, or Code-mixed:", value=default_query, placeholder="e.g. Adult applicant ko kon se documents chahye? / کیا سرکاری ملازم کو این او سی چاہیے؟")
+    user_query = st.text_input(
+        "Enter question in Urdu script, Roman Urdu, English, or Code-mixed:",
+        value=st.session_state.get('example_query', ''),
+        placeholder="e.g. Adult applicant ko kon se documents chahye? / کیا سرکاری ملازم کو ایں او سی چاہیے؟",
+        key="query_input"
+    )
+    if user_query != st.session_state.get('example_query', '') and st.session_state.get('example_query'):
+        st.session_state['example_query'] = user_query
 
     if st.button("🔍 Search & Ground Answer", type="primary") or user_query:
         if not user_query.strip():

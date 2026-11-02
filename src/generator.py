@@ -72,40 +72,75 @@ class GroundedAnswerEngine:
 
     # 4. Individual application tracking / personal delivery guarantees
     PERSONAL_STATUS_PATTERNS = [
+        # Roman Urdu variants
         r'\b(mera passport kab|kab ghar pohanchay ga|mera status|application status)\b',
+        r'\b(mera passport.*pohanche?g[ay]|mujhe.*passport.*kab|passport.*kab milega)\b',
+        r'\b(mera application|meri application|mera case|mera number|mera tracking)\b',
+        r'\b(current passport application status|status of my passport|mera passport status)\b',
+        # English variants
         r'\b(guarantee that my passport|arrive tomorrow|individual delivery)\b',
+        r'\b(what is my current passport application status|track my passport)\b',
+        r'\b(can you confirm my application will be approved|will my application be approved)\b',
+        r'\b(my cnic name.*different|application will be approved|confirm my application)\b',
+        r'\b(my individual application|guaranteed processing time for my)\b',
+        # Urdu script variants
         r'(میرا پاسپورٹ کل لازماً|کب گھر پہنچے گا|درخواست کا موجودہ اسٹیٹس|میرا اسٹیٹس)',
-        r'\b(what is my current passport application status|status of my passport)\b',
-        r'\b(can you confirm my application will be approved|will my application be approved)\b'
+        r'(میرے پاسپورٹ کی درخواست کا موجودہ|میری درخواست|میرا پاسپورٹ اسٹیٹس)',
     ]
 
     # 5. Unsupported action (e.g. booking appointments)
     UNSUPPORTED_ACTION_PATTERNS = [
+        # Roman Urdu
         r'\b(appointment.*confirm kar do|book an appointment|book appointment|mere liye appointment)\b',
-        r'(اپوائنٹمنٹ بک کر|وقت طے کر)'
+        r'\b(mujhay.*appointment.*confirm|appointment.*kal|kal.*appointment)\b',
+        r'\b(schedule.*appointment|fix appointment|appointment bana do)\b',
+        # Urdu script
+        r'(اپوائنٹمنٹ بک کر|وقت طے کر)',
+        r'(اپوائنٹمنٹ.*کل|کل.*اپوائنٹمنٹ|وقت مقرر)',
     ]
 
     # 6. Time-sensitive fee currency questions
     TIME_SENSITIVE_PATTERNS = [
+        # English
         r'\b(is the 2024 fee definitely still current today|still current today|valid today|current fee schedule)\b',
-        r'(کیا آج بھی یہی فیس لاگو ہے|کیا یہ فیس اب بھی لاگو ہے)'
+        r'\b(still (the same|applicable|current|valid) (today|now|currently))\b',
+        r'\b(fee.*still current|fee.*still (valid|applicable)|definitely still)\b',
+        # Roman Urdu
+        r'\b(abhi bhi yahi fee|aaj bhi yahi fee|fees? aaj bhi laagu|fee aaj bhi)\b',
+        # Urdu script
+        r'(کیا آج بھی یہی فیس لاگو ہے|کیا یہ فیس اب بھی لاگو ہے)',
+        r'(آج بھی یہی فیس|اب بھی لاگو|فیس اب بھی|یہی فیس اب)',
     ]
 
     # 7. Conflicting evidence questions
     CONFLICTING_PATTERNS = [
+        # English
         r'\b(another page says something else|different processing time|conflicting|two different pages)\b',
-        r'(ایک جگہ.*دوسری جگہ|تضاد|مختلف معلومات)'
+        r'\b(one page says|another page says|says something else|two pages)\b',
+        r'\b(page says normal processing is 21 days.*another page)\b',
+        # Roman Urdu / mixed
+        r'\b(ek jagah.*doosri jagah|doosri jagah.*alag|mختلف معلومات)\b',
+        # Urdu script
+        r'(ایک جگہ.*دوسری جگہ|تضاد|مختلف معلومات)',
     ]
 
     # 8. Unsafe / verification bypass
     UNSAFE_PATTERNS = [
-        r'\b(bypass passport verification|fake passport|bribe|skip biometric|cheat verification)\b',
-        r'(تصدیق بائی پاس|جعلی پاسپورٹ|بغیر تصدیق)'
+        # English
+        r'\b(bypass passport verification|bypass.*verification|fake passport|bribe|skip biometric|cheat verification)\b',
+        r'\b(how to bypass|get around verification|avoid verification|circumvent)\b',
+        # Roman Urdu
+        r'\b(bypass karna|jawali passport|takht\w+ karna|bina tasdeeq)\b',
+        # Urdu script
+        r'(تصدیق بائی پاس|جعلی پاسپورٹ|بغیر تصدیق)',
+        r'(پاسپورٹ تصدیق بائی پاس|تصدیق سے بچنا)',
     ]
 
     # 9. Unsupported generalization
     GENERALIZATION_PATTERNS = [
-        r'guaranteed fee for every applicant regardless of category'
+        r'guaranteed fee for every applicant regardless of category',
+        r'\b(same fee for (every|all) applicant|uniform fee for all|single fee regardless)\b',
+        r'\b(guaranteed.*fee.*every|every applicant.*guaranteed.*fee)\b',
     ]
 
     # Calibrated confidence threshold for dense retrieval

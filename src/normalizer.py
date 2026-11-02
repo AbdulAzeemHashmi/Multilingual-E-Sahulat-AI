@@ -46,6 +46,11 @@ class MultilingualNormalizer:
         '\u0611': '',
         '\u0612': '',
         '\u0613': '',
+        # Digits (Eastern Arabic and Persian/Urdu)
+        '\u06F0': '0', '\u06F1': '1', '\u06F2': '2', '\u06F3': '3', '\u06F4': '4',
+        '\u06F5': '5', '\u06F6': '6', '\u06F7': '7', '\u06F8': '8', '\u06F9': '9',
+        '\u0660': '0', '\u0661': '1', '\u0662': '2', '\u0663': '3', '\u0664': '4',
+        '\u0665': '5', '\u0666': '6', '\u0667': '7', '\u0668': '8', '\u0669': '9',
     }
 
     # Roman Urdu spelling normalizations
@@ -244,8 +249,14 @@ class MultilingualNormalizer:
         if detected_lang in ('roman_ur', 'code_mixed', 'en'):
             for w in filtered_words:
                 if len(w) >= 4:
-                    for i in range(len(w) - 2):
-                        tokens.append(f"#{w[i:i+3]}")
+                    tokens.extend([f"#{ng}" for ng in cls.generate_subword_ngrams(w, n=3)])
 
         return tokens
+
+    @classmethod
+    def generate_subword_ngrams(cls, word: str, n: int = 3) -> List[str]:
+        """Generates subword character n-grams from a word."""
+        if len(word) < n:
+            return []
+        return [word[i:i+n] for i in range(len(word) - n + 1)]
 
