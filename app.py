@@ -141,7 +141,7 @@ st.sidebar.markdown("• **Latency:** Under 30 milliseconds")
 
 # Header Section
 st.markdown("<div class='main-title'>Multilingual E-Sahulat AI</div>", unsafe_allow_html=True)
-st.markdown("<div class='sub-title'>ملٹی لنگوئل ای سہولت اے آئی — Evidence-Grounded Public Service Assistant</div>", unsafe_allow_html=True)
+st.markdown("<div class='sub-title'>ملٹی لنگوئل ای سہولت اے آئی - Evidence-Grounded Public Service Assistant</div>", unsafe_allow_html=True)
 
 # Tabs
 tab1, tab2, tab3, tab4 = st.tabs([
@@ -233,7 +233,7 @@ with tab1:
                 # Top-5 Retrieved Passages
                 with st.expander("🔎 Inspect All Top-5 Retrieved Evidence Passages & Scores"):
                     for p in retrieved:
-                        st.markdown(f"**Rank {p['rank']}: {p['passage_id']} — {p['topic']}** (Score: `{p['score']:.4f}` | URL: {p['source_url']})")
+                        st.markdown(f"**Rank {p['rank']}: {p['passage_id']} - {p['topic']}** (Score: `{p['score']:.4f}` | URL: {p['source_url']})")
                         st.markdown(f"• *EN:* {p['gold_evidence_en']}")
                         st.markdown(f"• *UR:* {p['gold_evidence_ur']}")
                         st.divider()

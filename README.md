@@ -6,7 +6,7 @@
 [![Zero External APIs](https://img.shields.io/badge/APIs-100%25%20Local%20%2F%20Offline-success.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-An evidence-grounded multilingual NLP assistant designed for Pakistan's public-service domain (**Directorate General of Immigration & Passports — DGI&P**). It enables citizens to retrieve accurate official information using **Urdu script**, **Roman Urdu**, **English**, and **code-mixed** queries, guarantees strict passage-level traceability with clickable official links, and reliably abstains on unanswerable or ambiguous questions.
+An evidence-grounded multilingual NLP assistant designed for Pakistan's public-service domain (**Directorate General of Immigration & Passports - DGI&P**). It enables citizens to retrieve accurate official information using **Urdu script**, **Roman Urdu**, **English**, and **code-mixed** queries, guarantees strict passage-level traceability with clickable official links, and reliably abstains on unanswerable or ambiguous questions.
 
 ---
 
@@ -35,7 +35,7 @@ An evidence-grounded multilingual NLP assistant designed for Pakistan's public-s
    - **Hybrid Reciprocal Rank Fusion (RRF):** Fuses lexical and semantic rankings with $k=60$, achieving optimal recall and MRR across languages.
 
 3. **Strict Evidence Grounding & Traceability:**
-   - Every substantive answer cites the exact official passage excerpt, document ID (`F01`–`F30`), and verified clickable official URL (`https://dgip.gov.pk/...`).
+   - Every substantive answer cites the exact official passage excerpt, document ID (`F01`-`F30`), and verified clickable official URL (`https://dgip.gov.pk/...`).
    - Dynamic multi-language output generation in **English**, **Urdu Script (Nastaliq)**, or **Roman Urdu**.
 
 4. **Zero-Hallucination Safe Abstention Engine:**

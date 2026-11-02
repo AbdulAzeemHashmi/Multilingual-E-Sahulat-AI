@@ -549,7 +549,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists 21 working days for normal MRP processing after successful processing; courier delivery time is excluded from the stated timeframe.",
     "expected_answer_ur": "DGI&P کے صفحے پر نارمل MRP کی کارروائی کے لیے کامیاب پراسیسنگ کے بعد 21 کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Normal — 21 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
+    "gold_evidence_en": "Normal - 21 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
     "gold_evidence_ur": "نارمل: 21 کاروباری دن؛ کوریئر کمپنی کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
@@ -564,7 +564,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists 21 working days for normal MRP processing after successful processing; courier delivery time is excluded from the stated timeframe.",
     "expected_answer_ur": "DGI&P کے صفحے پر نارمل MRP کی کارروائی کے لیے کامیاب پراسیسنگ کے بعد 21 کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Normal — 21 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
+    "gold_evidence_en": "Normal - 21 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
     "gold_evidence_ur": "نارمل: 21 کاروباری دن؛ کوریئر کمپنی کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
@@ -579,7 +579,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists 21 working days for normal MRP processing after successful processing; courier delivery time is excluded from the stated timeframe.",
     "expected_answer_ur": "DGI&P کے صفحے پر نارمل MRP کی کارروائی کے لیے کامیاب پراسیسنگ کے بعد 21 کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Normal — 21 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
+    "gold_evidence_en": "Normal - 21 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
     "gold_evidence_ur": "نارمل: 21 کاروباری دن؛ کوریئر کمپنی کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
@@ -594,7 +594,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists five working days for urgent MRP processing; courier delivery time is excluded.",
     "expected_answer_ur": "DGI&P کے صفحے پر ارجنٹ MRP کی کارروائی کے لیے پانچ کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Urgent — 5 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
+    "gold_evidence_en": "Urgent - 5 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
     "gold_evidence_ur": "ارجنٹ: 5 کاروباری دن؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
@@ -609,7 +609,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists five working days for urgent MRP processing; courier delivery time is excluded.",
     "expected_answer_ur": "DGI&P کے صفحے پر ارجنٹ MRP کی کارروائی کے لیے پانچ کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Urgent — 5 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
+    "gold_evidence_en": "Urgent - 5 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
     "gold_evidence_ur": "ارجنٹ: 5 کاروباری دن؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
@@ -624,7 +624,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists five working days for urgent MRP processing; courier delivery time is excluded.",
     "expected_answer_ur": "DGI&P کے صفحے پر ارجنٹ MRP کی کارروائی کے لیے پانچ کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Urgent — 5 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
+    "gold_evidence_en": "Urgent - 5 working days. The delivery time taken by the courier company is not included in the above-mentioned time frame.",
     "gold_evidence_ur": "ارجنٹ: 5 کاروباری دن؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
@@ -639,7 +639,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists two working days for Fast Track MRP processing in the cities where the service is available; courier delivery time is excluded.",
     "expected_answer_ur": "DGI&P کے صفحے پر جہاں فاسٹ ٹریک سروس دستیاب ہے وہاں MRP کے لیے دو کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Fast Track (available in 47 cities) — 2 working days. Courier delivery time is not included.",
+    "gold_evidence_en": "Fast Track (available in 47 cities) - 2 working days. Courier delivery time is not included.",
     "gold_evidence_ur": "فاسٹ ٹریک (47 شہروں میں دستیاب درج ہے): 2 کاروباری دن؛ کوریئر کا وقت شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
@@ -654,7 +654,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists two working days for Fast Track MRP processing in the cities where the service is available; courier delivery time is excluded.",
     "expected_answer_ur": "DGI&P کے صفحے پر جہاں فاسٹ ٹریک سروس دستیاب ہے وہاں MRP کے لیے دو کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Fast Track (available in 47 cities) — 2 working days. Courier delivery time is not included.",
+    "gold_evidence_en": "Fast Track (available in 47 cities) - 2 working days. Courier delivery time is not included.",
     "gold_evidence_ur": "فاسٹ ٹریک (47 شہروں میں دستیاب درج ہے): 2 کاروباری دن؛ کوریئر کا وقت شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
@@ -669,7 +669,7 @@
     "answerable": true,
     "expected_answer_en": "The DGI&P page lists two working days for Fast Track MRP processing in the cities where the service is available; courier delivery time is excluded.",
     "expected_answer_ur": "DGI&P کے صفحے پر جہاں فاسٹ ٹریک سروس دستیاب ہے وہاں MRP کے لیے دو کاروباری دن درج ہیں؛ کوریئر کی ترسیل کا وقت اس مدت میں شامل نہیں۔",
-    "gold_evidence_en": "Fast Track (available in 47 cities) — 2 working days. Courier delivery time is not included.",
+    "gold_evidence_en": "Fast Track (available in 47 cities) - 2 working days. Courier delivery time is not included.",
     "gold_evidence_ur": "فاسٹ ٹریک (47 شہروں میں دستیاب درج ہے): 2 کاروباری دن؛ کوریئر کا وقت شامل نہیں۔",
     "source_url": "https://dgip.gov.pk/passport/ordinary-passport.php",
     "notes": "Gold answer is a concise summary of the cited official source; re-check source freshness before public deployment."
