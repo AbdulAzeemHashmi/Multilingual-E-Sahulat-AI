@@ -13,7 +13,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Interface-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)
 
-<img src="https://skillicons.dev/icons?i=python,pytorch,numpy,pandas,github" alt="Tools used"/>
+<img src="https://skillicons.dev/icons?i=python,pytorch,github" alt="Tools used"/>
 
 <br/>
 
