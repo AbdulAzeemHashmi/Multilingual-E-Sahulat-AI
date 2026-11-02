@@ -1,223 +1,347 @@
-# Multilingual E-Sahulat AI (ملٹی لنگوئل ای سہولت اے آئی)
-### Evidence-Grounded Multilingual NLP for Pakistan's Public Services
+<div align="center">
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Streamlit App](https://img.shields.io/badge/Interface-Streamlit-FF4B4B.svg)](https://streamlit.io/)
-[![Zero External APIs](https://img.shields.io/badge/APIs-100%25%20Local%20%2F%20Offline-success.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<!-- Animated header banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:01411c,100:0ea5e9&height=200&section=header&text=Multilingual%20E-Sahulat%20AI&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Evidence%20Grounded%20Multilingual%20NLP%20for%20Pakistan%27s%20Public%20Services&descAlignY=58&descSize=17" width="100%"/>
 
-Multilingual E-Sahulat AI is a sovereign, evidence-grounded multilingual NLP assistant designed for Pakistan's public-service domain (**Directorate General of Immigration & Passports: DGI&P**). It enables citizens to retrieve authoritative public-service procedures using **Urdu script**, **Roman Urdu**, **English**, and **code-mixed** queries. It guarantees passage-level traceability with verified official links and reliably abstains when evidence is unavailable, conflicting, or out-of-domain.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=0EA5E9&center=true&vCenter=true&width=780&lines=Ask+in+Urdu%2C+Roman+Urdu%2C+or+English;Answers+Backed+by+Official+Sources;Safe+Abstention+When+Evidence+Is+Missing;Runs+Fully+Offline+on+a+Normal+CPU" alt="Typing SVG" />
 
----
+**ملٹی لنگوئل ای سہولت اے آئی**
 
-## 🏆 Hackathon Challenge Details
+<br/>
 
-* **Challenge:** Hackathon Challenge: Multilingual E-Sahulat AI (Evidence-Grounded Multilingual NLP for Pakistan)
-* **Domain Focus:** Directorate General of Immigration & Passports (DGI&P), Ministry of Interior, Government of Pakistan
-* **Time Limit:** 3 to 3.5 hours
-* **Team Size:** 2 to 3 participants
-* **Resource Constraints:** Free and open-source tools, models, and datasets. Models must be loaded locally in custom code. External API calls (Gemini, ChatGPT, Claude) are strictly prohibited.
-* **Core Goal:** Overcome vocabulary mismatch, script fragmentation, and ungrounded generation by building a robust cross-lingual retrieval pipeline with verifiable evidence grounding and safe abstention.
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Interface-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)
 
-### Functional Requirements Matrix
-* **FR-1 (Multilingual Input):** Accepts queries in Urdu script, Roman Urdu, English, and code-mixed formats.
-* **FR-2 (Query Normalization):** Normalizes Unicode inconsistencies, character elongation, spelling variations, and Eastern Arabic/Urdu digits.
-* **FR-3 (Information Retrieval):** Implements and benchmarks at least two distinct approaches: Lexical (Okapi BM25) and Dense Semantic (MiniLM-L12), plus a Hybrid Reciprocal Rank Fusion (RRF) pipeline.
-* **FR-4 (Evidence-Grounded Answers):** Every substantive answer is strictly backed by official retrieved passages and verified source URLs.
-* **FR-5 (Safe Abstention):** Safely abstains on ambiguous questions, out-of-domain queries, personal guarantees, time-sensitive inquiries, and prompt injections.
-* **FR-6 (Traceability):** Preserves document identifiers (`F01`-`F30`), passage excerpts, and official URLs for citizen auditability.
-* **FR-7 (Evaluation):** Full quantitative benchmark evaluation on 150 official records (60 held-out test queries, 90 train/dev queries).
-* **FR-8 (Usability):** Accessible Streamlit interface with language selection, 12 rubric validation cases, live latency metrics, and downloadable deliverables.
+<img src="https://skillicons.dev/icons?i=python,pytorch,numpy,pandas,github" alt="Tools used"/>
 
-### Judging Rubric Alignment (100 Points Total)
-| Criterion | Points | System Implementation & Evidence |
-| :--- | :---: | :--- |
-| **NLP Innovation & Technical Depth** | 20 | Dual-script Unicode cleaner, phonetic collapse lexicon, subword 3-grams, and Hybrid RRF fusion ($k=60$). |
-| **Retrieval Quality & Relevance** | 20 | 92.3% Recall@5 (BM25) and 0.8150 MRR@5 on held-out test set; 90.8% Recall@5 on Roman Urdu queries. |
-| **Answer Reliability & Grounding** | 20 | 97.6% Abstention F1, zero hallucination, strict passage citation, and verified official DGI&P URLs. |
-| **Validation & Experimental Rigor** | 15 | Multi-engine comparison table, disaggregated language splits, 4 qualitative failure case studies, and 18 unit tests. |
-| **Working Prototype & Usability** | 10 | Streamlit 4-tab dashboard, response language switcher, interactive 12-case rubric runner, compact responsive layout. |
-| **Practical Impact & Relevance** | 10 | Directly addresses Pakistan public service accessibility across non-standard Roman Urdu and Urdu script. |
-| **Presentation & Demonstration** | 5 | 5-page publication PDF technical report, structured validation pack ZIP, and clear documentation. |
+<br/>
+
+[Repository](https://github.com/AbdulAzeemHashmi/Multilingual-E-Sahulat-AI) &nbsp;|&nbsp; [Official Source: DGI&P](https://dgip.gov.pk) &nbsp;|&nbsp; [Technical Report](./reports/Multilingual_E_Sahulat_AI_Technical_Report.pdf)
+
+</div>
 
 ---
 
-## 💻 Complete Technology Stack
+## Table of Contents
 
-* **Programming Language:** Python 3.12 (compatible with Python 3.10+)
-* **Information Retrieval (Lexical):** `rank-bm25` (Okapi BM25 algorithm, $k_1=1.5, b=0.75$) with language-specific stopword filtering and subword character 3-gram indexing.
-* **Information Retrieval (Dense):** HuggingFace `sentence-transformers` (`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, 117M parameters, 384-dimensional embeddings, PyTorch CPU execution).
-* **Rank Fusion Engine:** Reciprocal Rank Fusion (RRF with $k=60$) coupled with min-max normalized score combination (65% dense weight, 35% lexical weight).
-* **Web Interface:** `streamlit` 1.66+ with custom responsive CSS, Nastaliq typography, session state caching, and mobile-friendly viewport optimization.
-* **Document & PDF Generation:** `reportlab` 4.x (two-pass dynamic `NumberedCanvas` generating publication-quality 5-page PDF reports), `PyPDF2`.
-* **Data Processing & Scientific Computing:** `numpy`, `pandas`, `unicodedata`, `re`.
-* **Execution & Sovereign Edge Policy:** 100% offline local inference via `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1`. Zero GPU requirement (CPU-optimized, average retrieval latency < 30 ms).
-
----
-
-## 🚀 Key Innovations & System Architecture
-
-1. **Dual-Script Preprocessing & Normalization (`src/normalizer.py`):**
-   * **Urdu Script Unicode Cleaner:** Normalizes non-standard Alef (`آ, أ, إ` $\to$ `ا`), Yeh (`ي, ى, ے` $\to$ `ی / ے`), Heh (`ہ, ة` $\to$ `ہ`), and Kaf (`ك` $\to$ `ک`), strips diacritics / Tashkeel, and converts Eastern Arabic and Urdu digits (`۰-۹`) to standard numerals.
-   * **Roman Urdu Phonetic Normalizer:** Vocabulary collapse for common auxiliary verbs (`hy/hei/he` $\to$ `hai`, `krna` $\to$ `karna`), domain terms (`pasport` $\to$ `passport`, `renu` $\to$ `renew`, `chahye/chaheay` $\to$ `chahiye`), and collapses character elongation (`paspooort` $\to$ `passport`).
-   * **Subword 3-Gram Indexing:** Generates character n-grams to recover relevance even under unseen phonetic typos.
-
-2. **Multi-Engine Retrieval Architecture (`src/retriever.py`):**
-   * **BM25 Lexical:** Fast inverted-index lookup optimized for exact document numbers, fee amounts, and procedural keywords.
-   * **Dense MiniLM Semantic:** Multilingual vector representations capturing conceptual intent across paraphrased questions.
-   * **Hybrid RRF Fusion:** Merges lexical exactness with semantic generalizations, achieving 100.0% cross-script consistency.
-
-3. **Safe Abstention & Guardrails (`src/generator.py`):**
-   * **Ambiguity Interception:** Intercepts unspecific queries (e.g. *"Kitni fee hai?"*) and asks for required parameters (booklet size, validity, delivery tier).
-   * **Out-of-Domain Detection:** Calibrated semantic threshold ($\tau = 0.38$) rejects non-public-service queries (sports, weather, politics).
-   * **Adversarial & Injection Immunity:** Detects attempts to bypass citations or override instructions.
-   * **Personal Guarantees Refusal:** Directs citizens to official tracking channels (SMS 9988) instead of guessing individual delivery dates.
+- [Overview](#overview)
+- [The Problem](#the-problem)
+- [How It Works](#how-it-works)
+- [Key Features](#key-features)
+- [Benchmark Results](#benchmark-results)
+- [The 12 Validation Cases](#the-12-validation-cases)
+- [Challenge Details](#challenge-details)
+- [Technology Stack](#technology-stack)
+- [Installation and Commands](#installation-and-commands)
+- [Repository Structure](#repository-structure)
+- [Sources and License](#sources-and-license)
 
 ---
 
-## 📊 Quantitative Benchmark Results
+## Overview
 
-Evaluated across **150 benchmark records** (60 held-out test queries, 90 train/dev queries):
+**Multilingual E-Sahulat AI** is a local, evidence grounded assistant for Pakistan's public services. It focuses on the **Directorate General of Immigration and Passports (DGI&P)**.
 
-### Primary Benchmark: Held-Out Test Set ($N=60$)
-| Retrieval Method | Recall@1 | Recall@5 | MRR@5 | Citation Support | Abstention F1 | Consistency | Avg Latency |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BM25 (Lexical)** | 74.4% | **92.3%** | **0.8150** | 74.4% | **97.6%** | **100.0%** | **0.8 ms** |
-| **Dense Semantic (MiniLM)** | 59.0% | 76.9% | 0.6603 | 56.4% | 97.7% | **100.0%** | 17.5 ms |
-| **Hybrid (RRF Fusion)** | **76.9%** | 84.6% | 0.7957 | 71.8% | 95.5% | **100.0%** | 20.8 ms |
+Citizens can ask questions in **Urdu script**, **Roman Urdu**, **English**, or a **mix of these**. The system finds the right official passage, answers from it, and shows the passage ID and the official link. When the evidence is missing, unclear, or out of scope, it says so instead of guessing.
 
-### Full Dataset ($N=150$) Disaggregation by Language
-| Language / Script | Total Queries | BM25 Recall@5 | BM25 MRR@5 | Dense Recall@5 | Hybrid Recall@5 | Hybrid MRR@5 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **English (EN)** | 33 queries | **93.9%** | 0.8586 | 87.9% | **93.9%** | **0.8712** |
-| **Urdu Script (UR)** | 31 queries | **93.5%** | **0.8414** | 83.9% | 90.3% | 0.8333 |
-| **Roman Urdu (ROMAN_UR)** | 65 queries | **90.8%** | **0.7967** | 72.3% | 83.1% | 0.7454 |
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="420">
+</div>
 
 ---
 
-## 🧪 Verification of the 12 Rubric Validation Cases
+## The Problem
 
-| Case | Category | Sample Query | System Behavior & Evidence Citation | Status |
-| :---: | :--- | :--- | :--- | :---: |
-| **1** | Urdu Script | `پاسپورٹ کی تجدید کے لیے کون سی دستاویزات درکار ہیں؟` | Answers in Urdu; cites Passage F18 with DGI&P FAQ link. | **PASS** |
-| **2** | Roman Urdu | `Passport renew karwanay ke liye kya documents chahiye?` | Identifies renewal intent; matches Case 1 evidence without translation. | **PASS** |
-| **3** | English Query | `Which documents are required to renew a passport?` | Cites Passage F16/F18 with official procedural requirements. | **PASS** |
-| **4** | Code-Mixed | `Passport renewal ke liye online apply karna hota hai ya office jana hota hai?` | Clarifies portal eligibility criteria (F17/F18) vs office visit requirements. | **PASS** |
-| **5** | Spelling Variation | `pasport renu karwana hy` vs `passport renew karwana hai` | Normalizer and subword 3-grams recover F17 for both variations identically. | **PASS** |
-| **6** | Paraphrased Query | `I need to replace my expired passport. Where should I start?` | Dense semantic model retrieves renewal guidelines (F16/F17). | **PASS** |
-| **7** | Unsupported Personal | `What is the guaranteed processing time for my individual application?` | Safely abstains; clarifies general timelines (21 days) cannot guarantee individual delivery. | **PASS** |
-| **8** | Out-of-Domain | `Who will win the next cricket World Cup?` | Cosine similarity = 0.114 < 0.38; clearly communicates question is outside public services. | **PASS** |
-| **9** | Ambiguous Query | `How much does it cost?` / `Kitni fee hai?` | Asks for clarification on pages (36/72/100), validity (5/10 yr), and service tier. | **PASS** |
-| **10** | Conflicting Evidence | `One page says 21 days for normal processing, but another says different.` | Discloses discrepancy, cites 21-day standard, and directs to current live portal advisory. | **PASS** |
-| **11** | Citation Integrity | `What is required if my passport has been lost?` | Cites Passage F05 police report requirement with exact official URL. | **PASS** |
-| **12** | Semantic Noise | `asdfghjkl zxcvbnm 12345` | Rejects random string and requests meaningful procedural question. | **PASS** |
+| Problem | What goes wrong |
+|---|---|
+| **Vocabulary mismatch** | People ask in their own words, which often differ from the official wording |
+| **Script fragmentation** | The same question can be written in Urdu script, Roman Urdu, or English, with many spelling styles |
+| **Ungrounded answers** | Language models can make up facts that are not in any official source |
+
+This project solves these problems with a cross language search pipeline, passage level evidence, and safe abstention.
 
 ---
 
-## 🛠️ Step-by-Step Installation & Real Execution Commands
+## How It Works
 
-All commands below are actual, verified terminal commands designed for Windows PowerShell and standard Bash environments:
+<div align="center">
 
-### 1. Prerequisites
-* Python 3.10, 3.11, or 3.12 installed
-* Git installed
-* Standard CPU (No GPU required)
+```mermaid
+flowchart LR
+    A[Citizen Query] --> B[Normalizer]
+    B --> RET
+    subgraph RET[Retrieval Engines]
+        direction TB
+        C1[BM25 Lexical]
+        C2[MiniLM Dense]
+        C3[Hybrid RRF Fusion]
+    end
+    RET --> D{Guardrails}
+    D -->|Evidence is strong| E[Grounded Answer]
+    D -->|Unclear or unsafe| F[Safe Abstention]
+    E --> G[Passage ID and Official URL]
+```
 
-### 2. Clone the Repository
+</div>
+
+1. **Normalize:** clean Urdu script, fix Roman Urdu spelling, and convert digits.
+2. **Retrieve:** search the 30 official procedures with BM25, a dense model, or both together.
+3. **Check:** decide whether the question is clear, in scope, and safe to answer.
+4. **Answer:** reply from the passage with its ID and official link, or abstain.
+
+---
+
+## Key Features
+
+### 1. Dual Script Normalization (`src/normalizer.py`)
+
+- **Urdu script cleaner:** fixes different forms of Alef, Yeh, Heh, and Kaf, removes diacritics, and converts Eastern Arabic and Urdu digits to standard numbers.
+- **Roman Urdu normalizer:** joins spelling variants such as `hy`, `hei`, and `he` into `hai`, and `krna` into `karna`. It also maps domain words such as `pasport` to `passport` and `renu` to `renew`, and shortens stretched letters such as `paspooort`.
+- **Subword 3 grams:** character pieces help the search recover results even when a typo has never been seen before.
+
+### 2. Multi Engine Retrieval (`src/retriever.py`)
+
+- **BM25 lexical search:** fast and strong on exact words, fee amounts, and procedure keywords.
+- **Dense MiniLM search:** captures the meaning of a question, even when it is reworded.
+- **Hybrid RRF fusion:** combines both lists. All three engines reached 100.0% cross script consistency.
+
+### 3. Safe Abstention and Guardrails (`src/generator.py`)
+
+- **Ambiguous questions:** a question like "Kitni fee hai?" gets a follow up asking for page count, validity, and delivery tier.
+- **Out of domain questions:** a similarity threshold of 0.38 rejects topics such as sports, weather, and politics.
+- **Prompt injection:** attempts to skip citations or override the rules are detected.
+- **Personal guarantees:** the system points users to official tracking (SMS 9988) instead of guessing a delivery date.
+
+---
+
+## Benchmark Results
+
+The benchmark uses **150 official records**: 60 held-out test queries and 90 train and dev queries.
+
+### Held-Out Test Set (N = 60)
+
+| Method | Recall@1 | Recall@5 | MRR@5 | Citation Support | Abstention F1 | Consistency | Avg Latency |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **BM25 (Lexical)** | 74.4% | **92.3%** | **0.8150** | 74.4% | **97.6%** | 100.0% | **0.8 ms** |
+| **Dense (MiniLM)** | 59.0% | 76.9% | 0.6603 | 56.4% | 97.7% | 100.0% | 17.5 ms |
+| **Hybrid (RRF)** | **76.9%** | 84.6% | 0.7957 | 71.8% | 95.5% | 100.0% | 20.8 ms |
+
+BM25 had the best Recall@5, MRR@5, and speed on the held-out set. Hybrid had the best Recall@1.
+
+**Recall@5 on the held-out test set** (each # is about 2 percentage points):
+
+```text
+BM25    | ############################################## 92.3%
+Hybrid  | ##########################################     84.6%
+Dense   | ######################################         76.9%
+```
+
+### Results by Language (All 150 Records)
+
+| Language | Queries | BM25 Recall@5 | BM25 MRR@5 | Dense Recall@5 | Hybrid Recall@5 | Hybrid MRR@5 |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **English** | 33 | **93.9%** | 0.8586 | 87.9% | **93.9%** | **0.8712** |
+| **Urdu script** | 31 | **93.5%** | **0.8414** | 83.9% | 90.3% | 0.8333 |
+| **Roman Urdu** | 65 | **90.8%** | **0.7967** | 72.3% | 83.1% | 0.7454 |
+
+---
+
+## The 12 Validation Cases
+
+| Case | Category | Sample Query | What the system does | Status |
+|:---:|:---|:---|:---|:---:|
+| **1** | Urdu script | `پاسپورٹ کی تجدید کے لیے کون سی دستاویزات درکار ہیں؟` | Answers in Urdu and cites passage F18 with the DGI&P FAQ link | **PASS** |
+| **2** | Roman Urdu | `Passport renew karwanay ke liye kya documents chahiye?` | Finds the renewal intent and matches the evidence from Case 1 without translation | **PASS** |
+| **3** | English | `Which documents are required to renew a passport?` | Cites passages F16 and F18 with the official requirements | **PASS** |
+| **4** | Code mixed | `Passport renewal ke liye online apply karna hota hai ya office jana hota hai?` | Explains online portal rules and office visit rules (F17 and F18) | **PASS** |
+| **5** | Spelling variation | `pasport renu karwana hy` and `passport renew karwana hai` | The normalizer and 3 grams find F17 for both spellings | **PASS** |
+| **6** | Paraphrase | `I need to replace my expired passport. Where should I start?` | The dense model finds the renewal guidance (F16 and F17) | **PASS** |
+| **7** | Personal guarantee | `What is the guaranteed processing time for my individual application?` | Abstains, and explains that the general 21 day timeline is not a personal promise | **PASS** |
+| **8** | Out of domain | `Who will win the next cricket World Cup?` | Similarity 0.114 is below 0.38, so it says the question is outside public services | **PASS** |
+| **9** | Ambiguous | `How much does it cost?` and `Kitni fee hai?` | Asks for pages (36, 72, or 100), validity (5 or 10 years), and service tier | **PASS** |
+| **10** | Conflicting evidence | `One page says 21 days for normal processing, but another says different.` | Reports the difference, cites the 21 day standard, and points to the live portal notice | **PASS** |
+| **11** | Citation check | `What is required if my passport has been lost?` | Cites passage F05 (police report) with the exact official URL | **PASS** |
+| **12** | Random noise | `asdfghjkl zxcvbnm 12345` | Rejects the text and asks for a real question | **PASS** |
+
+---
+
+## Challenge Details
+
+This project was built for a hackathon challenge.
+
+| Item | Detail |
+|---|---|
+| **Challenge** | Multilingual E-Sahulat AI: Evidence Grounded Multilingual NLP for Pakistan |
+| **Domain** | Directorate General of Immigration and Passports (DGI&P), Ministry of Interior, Government of Pakistan |
+| **Time limit** | 3 to 3.5 hours |
+| **Team size** | 2 to 3 people |
+| **Rules** | Free and open source tools only. Models must load locally. External APIs such as Gemini, ChatGPT, and Claude are not allowed |
+| **Core goal** | Fix vocabulary mismatch, script fragmentation, and ungrounded answers with a cross language search pipeline, verifiable evidence, and safe abstention |
+
+### Functional Requirements
+
+| ID | Requirement | How it is met |
+|:---:|:---|:---|
+| **FR-1** | Multilingual input | Accepts Urdu script, Roman Urdu, English, and mixed queries |
+| **FR-2** | Query normalization | Fixes Unicode differences, stretched letters, spelling variants, and Eastern Arabic and Urdu digits |
+| **FR-3** | Information retrieval | Benchmarks BM25 and dense MiniLM search, plus a hybrid RRF pipeline |
+| **FR-4** | Evidence grounded answers | Every real answer comes from official passages with verified source URLs |
+| **FR-5** | Safe abstention | Abstains on ambiguous, out of domain, personal, time sensitive, and injection queries |
+| **FR-6** | Traceability | Keeps document IDs (F01 to F30), passage excerpts, and official URLs |
+| **FR-7** | Evaluation | Full benchmark on 150 records: 60 held-out test and 90 train and dev queries |
+| **FR-8** | Usability | Streamlit interface with language choice, a 12 case runner, live latency, and downloads |
+
+### Judging Rubric (100 Points)
+
+| Criterion | Points | Evidence in this project |
+|:---|:---:|:---|
+| **NLP innovation and technical depth** | 20 | Dual script cleaner, phonetic collapse list, subword 3 grams, and hybrid RRF fusion (k = 60) |
+| **Retrieval quality and relevance** | 20 | 92.3% Recall@5 and 0.8150 MRR@5 for BM25 on the held-out set, and 90.8% Recall@5 on Roman Urdu |
+| **Answer reliability and grounding** | 20 | 97.6% abstention F1, no ungrounded answers in the tests, passage citations, and official DGI&P links |
+| **Validation and experiment rigor** | 15 | Multi engine comparison, language splits, 4 failure case studies, and 18 unit tests |
+| **Working prototype and usability** | 10 | Streamlit dashboard with 4 tabs, a response language switcher, and an interactive 12 case runner |
+| **Practical impact and relevance** | 10 | Makes public services easier to reach in Roman Urdu and Urdu script |
+| **Presentation and demo** | 5 | A 5 page PDF report, a validation pack ZIP, and clear documentation |
+
+---
+
+## Technology Stack
+
+| Area | Technology |
+|---|---|
+| **Language** | Python 3.12 (works with Python 3.10 and newer) |
+| **Lexical search** | `rank-bm25` (Okapi BM25 with k1 = 1.5 and b = 0.75), language based stopword filtering, and subword 3 gram indexing |
+| **Dense search** | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (117M parameters, 384 dimensional embeddings, PyTorch on CPU) |
+| **Rank fusion** | Reciprocal Rank Fusion (k = 60) with a min max score mix of 65% dense and 35% lexical |
+| **Web interface** | `streamlit` 1.66 or newer, custom responsive CSS, Nastaliq font, session caching, and mobile friendly layout |
+| **Reports** | `reportlab` 4.x for the 5 page PDF, and `PyPDF2` |
+| **Data tools** | `numpy`, `pandas`, `unicodedata`, and `re` |
+| **Offline policy** | `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1`, no GPU needed, average retrieval under 30 ms |
+
+---
+
+## Installation and Commands
+
+The commands work in Windows PowerShell and in standard Bash.
+
+**Before you start:** install Python 3.10, 3.11, or 3.12, and Git. A normal CPU is enough.
+
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/AbdulAzeemHashmi/Multilingual-E-Sahulat-AI.git
 cd Multilingual-E-Sahulat-AI
 ```
 
-### 3. Install Required Dependencies
+### 2. Install the dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Build Knowledge Base & Pre-Compute Embeddings
+### 3. Build the knowledge base and embeddings
+
 ```bash
 python src/data_loader.py
 ```
-*Outputs: `data/knowledge_base.json`, `data/train_dev.json`, `data/test.json`, and `data/passage_embeddings.npz`.*
 
-### 5. Run the Quantitative Evaluation Benchmark
+Creates `data/knowledge_base.json`, `data/train_dev.json`, `data/test.json`, and `data/passage_embeddings.npz`.
+
+### 4. Run the benchmark
+
 ```bash
 python src/evaluate.py
 ```
-*Outputs: Full retrieval metrics table, CSV comparisons, and held-out test predictions.*
 
-### 6. Run the Automated Unit Test Suite
+Prints the full metrics table and saves CSV comparisons and the held-out test predictions.
+
+### 5. Run the unit tests
+
 ```bash
 python -m unittest discover tests
 ```
-*Runs all 18 automated unit tests covering normalization, retrieval modes, traceability, and abstention guardrails.*
 
-### 7. Generate the 5-Page Publication Technical Report (PDF)
+Runs all 18 tests for normalization, retrieval modes, traceability, and abstention guardrails.
+
+### 6. Generate the PDF report
+
 ```bash
 python src/generate_report.py
 ```
-*Outputs: `reports/Multilingual_E_Sahulat_AI_Technical_Report.pdf`.*
 
-### 8. Launch the Streamlit Web Application
-Use the exact command for your environment:
+Creates `reports/Multilingual_E_Sahulat_AI_Technical_Report.pdf`.
 
-* **Windows PowerShell (Recommended):**
-  ```powershell
-  python -m streamlit run app.py
-  ```
-* **Command Prompt / Terminal with Streamlit on PATH:**
-  ```bash
-  streamlit run app.py
-  ```
-* Open your browser and navigate to:
-  ```
-  http://localhost:8501
-  ```
+### 7. Start the web app
+
+On Windows PowerShell (recommended):
+
+```powershell
+python -m streamlit run app.py
+```
+
+If Streamlit is on your PATH:
+
+```bash
+streamlit run app.py
+```
+
+Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
-## 📂 Updated Repository Structure
+## Repository Structure
 
-```
+```text
 Multilingual-E-Sahulat-AI/
-├── app.py                                          # 4-Tab Streamlit Web Application (UI/UX Optimized)
-├── requirements.txt                                # Production dependencies list
-├── README.md                                       # Comprehensive Documentation & Tech Stack Guide
-├── Multilingual E-Sahulat AI_Hackathon_Dataset.txt # Official 150-record DGI&P dataset
+├── app.py                                          # 4 tab Streamlit web app
+├── requirements.txt                                # Dependencies
+├── README.md                                       # This file
+├── Multilingual E-Sahulat AI_Hackathon_Dataset.txt # Official 150 record DGI&P dataset
 ├── data/
-│   ├── knowledge_base.json                         # 30 canonical official public-service procedures (F01-F30)
-│   ├── train_dev.json                              # 90 train/dev queries with ground truth annotations
+│   ├── knowledge_base.json                         # 30 official procedures (F01 to F30)
+│   ├── train_dev.json                              # 90 train and dev queries with answers
 │   ├── test.json                                   # 60 held-out test queries
-│   └── passage_embeddings.npz                      # Pre-computed 384-dimensional dense embedding cache
+│   └── passage_embeddings.npz                      # Cached 384 dimensional embeddings
 ├── src/
-│   ├── __init__.py                                 # Python package identifier
-│   ├── normalizer.py                               # Urdu Unicode cleaner, Roman Urdu normalizer, subword 3-grams
-│   ├── retriever.py                                # Okapi BM25, Dense MiniLM-L12, Hybrid RRF rank fusion
-│   ├── generator.py                                # Grounded answer synthesis & 9-category safe abstention engine
-│   ├── evaluate.py                                 # Full evaluation suite (Recall@K, MRR@K, Abstention F1)
-│   ├── data_loader.py                              # Dataset parser & knowledge base builder
-│   └── generate_report.py                          # ReportLab 5-page publication PDF report generator
-├── tests/                                          # Automated Unit Test Suite (18 tests, 100% pass rate)
-│   ├── test_normalizer.py                          # Script detection, Urdu Unicode cleaning, Roman Urdu collapse
-│   ├── test_retriever.py                           # BM25, Dense, Hybrid retrieval, score thresholds, source URLs
-│   └── test_generator.py                           # All 9 abstention guardrails and grounded citation generation
+│   ├── __init__.py                                 # Package file
+│   ├── normalizer.py                               # Urdu cleaner, Roman Urdu normalizer, 3 grams
+│   ├── retriever.py                                # BM25, dense MiniLM, hybrid RRF fusion
+│   ├── generator.py                                # Grounded answers and 9 category abstention engine
+│   ├── evaluate.py                                 # Evaluation suite (Recall@K, MRR@K, Abstention F1)
+│   ├── data_loader.py                              # Dataset parser and knowledge base builder
+│   └── generate_report.py                          # ReportLab PDF report generator
+├── tests/                                          # 18 unit tests, all passing
+│   ├── test_normalizer.py                          # Script detection, Urdu cleaning, Roman Urdu collapse
+│   ├── test_retriever.py                           # BM25, dense, hybrid, score thresholds, source URLs
+│   └── test_generator.py                           # All 9 abstention guardrails and citations
 ├── reports/
-│   └── Multilingual_E_Sahulat_AI_Technical_Report.pdf  # Deliverable 1: 5-page PDF technical publication report
-└── validation_pack/                                # Deliverables 2 & 3: Submission Package
-    ├── Multilingual_E_Sahulat_AI_Validation_Pack.zip   # Complete standalone submission ZIP archive
-    ├── retrieval_comparison.csv                     # Multi-engine comparison metrics (CSV)
-    ├── retrieval_comparison.md                      # Multi-engine comparison metrics (Markdown)
-    ├── test_predictions.csv                        # 60 held-out test predictions sheet
-    ├── test_predictions.json                       # 60 test predictions with complete score metadata
-    ├── full_evaluation_metrics.json                # Complete metrics across test set and full dataset
-    └── failure_analysis.md                         # Qualitative failure analysis (4 representative case studies)
+│   └── Multilingual_E_Sahulat_AI_Technical_Report.pdf  # 5 page technical report
+└── validation_pack/                                # Submission package
+    ├── Multilingual_E_Sahulat_AI_Validation_Pack.zip   # Standalone submission archive
+    ├── retrieval_comparison.csv                    # Engine comparison metrics (CSV)
+    ├── retrieval_comparison.md                     # Engine comparison metrics (Markdown)
+    ├── test_predictions.csv                        # 60 held-out test predictions
+    ├── test_predictions.json                       # Test predictions with full score details
+    ├── full_evaluation_metrics.json                # Metrics for the test set and the full dataset
+    └── failure_analysis.md                         # 4 failure case studies
 ```
 
 ---
 
-## 📜 Citations & Source Provenance
+## Sources and License
 
-* **Official Source:** Directorate General of Immigration & Passports (DGI&P), Ministry of Interior, Government of Pakistan (`https://dgip.gov.pk`).
-* **Underlying Pretrained Model:** HuggingFace `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (Apache 2.0).
-* **Lexical Model:** Okapi BM25 (`rank-bm25`).
-* **License:** Open Source MIT License.
+- **Official source:** Directorate General of Immigration and Passports (DGI&P), Ministry of Interior, Government of Pakistan ([dgip.gov.pk](https://dgip.gov.pk))
+- **Pretrained model:** `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` from Hugging Face (Apache 2.0)
+- **Lexical model:** Okapi BM25 through `rank-bm25`
+- **License:** MIT
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:01411c&height=100&section=footer" width="100%"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=1500&color=0EA5E9&center=true&vCenter=true&width=560&lines=Multilingual+E-Sahulat+AI;Clear+Answers+With+Official+Proof" alt="Footer typing text"/>
+
+</div>
