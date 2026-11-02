@@ -33,12 +33,49 @@ st.markdown("""
     /* Offline-safe: Google Fonts loads when online, system fonts used as fallback */
     @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Inter:wght@400;600;700&display=swap');
     
+    /* 1. Eliminate huge whitespace gap at the top boundary */
+    header[data-testid="stHeader"] {
+        height: 1.5rem !important;
+        background: transparent !important;
+    }
+    
+    .block-container {
+        padding-top: 1.0rem !important;
+        padding-bottom: 2rem !important;
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+    }
+    
+    /* 2. Eliminate whitespace gap above sidebar logo */
+    [data-testid="stSidebar"] {
+        padding-top: 0rem !important;
+    }
+    [data-testid="stSidebarContent"] {
+        padding-top: 0.5rem !important;
+    }
+    [data-testid="stSidebarUserContent"] {
+        padding-top: 0rem !important;
+    }
+    [data-testid="stSidebar"] [data-testid="stImage"] {
+        margin-top: -1.2rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+    
+    /* 3. Compact pill button styling to avoid ellipsis text cutoff */
+    div[data-testid="stHorizontalBlock"] button {
+        padding: 0.35rem 0.5rem !important;
+        font-size: 0.84rem !important;
+        border-radius: 8px !important;
+    }
+    
     .main-title {
         color: #0D3B66;
         font-family: 'Inter', sans-serif;
         font-weight: 800;
-        font-size: 2.2rem;
-        margin-bottom: 0px;
+        font-size: 2.1rem;
+        margin-top: -1.0rem !important;
+        margin-bottom: 0px !important;
+        padding-top: 0px !important;
     }
     .sub-title {
         color: #006400;
@@ -159,20 +196,20 @@ tab1, tab2, tab3, tab4 = st.tabs([
 with tab1:
     st.markdown("##### Ask any question regarding Pakistani passport procedures, validity, fees, or requirements:")
     
-    # Example Query Pills - use session_state so selected example persists across reruns
+        # Example Query Pills - use session_state so selected example persists across reruns
     col_e1, col_e2, col_e3, col_e4, col_e5 = st.columns(5)
     if 'example_query' not in st.session_state:
         st.session_state['example_query'] = ""
-    if col_e1.button("\U0001f1f5\U0001f1f0 Urdu: پاسپورٹ کی تجدید"):
+    if col_e1.button("🇵🇰 Urdu: تجدید", help="پاسپورٹ کی تجدید کے لیے کون سی دستاویزات درکار ہیں؟"):
         st.session_state['example_query'] = "پاسپورٹ کی تجدید کے لیے کون سی دستاویزات درکار ہیں؟"
-    if col_e2.button("\U0001f524 Roman: Passport renew"):
+    if col_e2.button("🔤 Roman: Renew", help="Passport renew karwanay ke liye kya documents chahiye?"):
         st.session_state['example_query'] = "Passport renew karwanay ke liye kya documents chahiye?"
-    if col_e3.button("\U0001f1ec\U0001f1e7 English: Normal time"):
+    if col_e3.button("🇬🇧 English: Time", help="What processing time is listed for a normal MRP?"):
         st.session_state['example_query'] = "What processing time is listed for a normal MRP?"
-    if col_e4.button("\u26a0\ufe0f Ambiguous: Fee"):
+    if col_e4.button("⚠️ Ambiguous: Fee", help="Kitni fee hai?"):
         st.session_state['example_query'] = "Kitni fee hai?"
-    if col_e5.button("\u274c Out of Domain: Cricket"):
-        st.session_state['example_query'] = "Who will win the next Cricket World Cup?"
+    if col_e5.button("❌ Out of Domain", help="Who will win the next Cricket World Cup?"):
+        st.session_state['example_query'] = "Who will win the next Cricket World Cup?" 
 
     user_query = st.text_input(
         "Enter question in Urdu script, Roman Urdu, English, or Code-mixed:",
