@@ -46,18 +46,18 @@ st.markdown("""
         padding-right: 2.5rem !important;
     }
     
-    /* 2. Position sidebar logo neatly inside boundary with minimal positive gap */
+    /* 2. Align sidebar logo to exact same top boundary distance as main title */
     [data-testid="stSidebar"] {
         padding-top: 0rem !important;
     }
     [data-testid="stSidebarHeader"] {
-        height: 1.8rem !important;
-        min-height: 1.8rem !important;
-        padding-top: 0.4rem !important;
+        height: 1.5rem !important;
+        min-height: 1.5rem !important;
+        padding-top: 0.2rem !important;
         padding-bottom: 0rem !important;
     }
     [data-testid="stSidebarContent"] {
-        padding-top: 0.4rem !important;
+        padding-top: 0rem !important;
         margin-top: 0rem !important;
     }
     [data-testid="stSidebarUserContent"] {
@@ -67,9 +67,9 @@ st.markdown("""
     section[data-testid="stSidebar"] div.stElementContainer:first-of-type,
     section[data-testid="stSidebar"] div[data-testid="element-container"]:first-of-type,
     section[data-testid="stSidebar"] [data-testid="stImage"] {
-        margin-top: 0.25rem !important;
+        margin-top: -1.35rem !important;
         padding-top: 0rem !important;
-        margin-bottom: 0.4rem !important;
+        margin-bottom: 0.35rem !important;
     }
     section[data-testid="stSidebar"] [data-testid="stImage"] img {
         margin-top: 0rem !important;
