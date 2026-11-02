@@ -46,7 +46,7 @@ st.markdown("""
         padding-right: 2.5rem !important;
     }
     
-    /* 2. Sidebar logo calibrated to exactly 10px from top boundary */
+    /* 2. Sidebar logo top gap matched exactly to main title top gap */
     [data-testid="stSidebar"] {
         padding-top: 0rem !important;
     }
@@ -67,7 +67,7 @@ st.markdown("""
     section[data-testid="stSidebar"] div.stElementContainer:first-of-type,
     section[data-testid="stSidebar"] div[data-testid="element-container"]:first-of-type,
     section[data-testid="stSidebar"] [data-testid="stImage"] {
-        margin-top: -2.1rem !important;
+        margin-top: -0.6rem !important;
         padding-top: 0rem !important;
         margin-bottom: 0.35rem !important;
     }
