@@ -549,3 +549,4 @@ def build_pdf_report(output_filename: str = "reports/Multilingual_E_Sahulat_AI_T
 
 if __name__ == '__main__':
     build_pdf_report()
+

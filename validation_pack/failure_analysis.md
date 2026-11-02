@@ -59,3 +59,4 @@ Testing was performed across three retrieval paradigms:
 1. **Hybrid Retrieval is Essential for Mixed-Script Environments**: Pure dense models suffer on Roman Urdu vocabulary gaps, while pure BM25 fails on paraphrases. Hybrid RRF achieves the highest MRR and cross-script consistency.
 2. **Rule-Based Pre-filtering Eliminates Hallucination Risk**: Combining strict similarity thresholding with structural regex guards on known ambiguous / tracking / adversarial patterns guarantees an Abstention F1 of **>97%**.
 3. **Traceable Attribution Builds Public Trust**: Displaying the exact official passage excerpt alongside the DGIP source URL ensures citizens and verifying officers can audit every answer directly.
+

@@ -19,7 +19,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 37.82
+    "latency_ms": 71.06
   },
   {
     "qid": "N012",
@@ -41,7 +41,7 @@
     "status": "answered",
     "cited_passage": "F12",
     "answer": "Children under 15 years of age are issued passports with five-year validity only, according to the DGI&P page.",
-    "latency_ms": 38.43
+    "latency_ms": 38.58
   },
   {
     "qid": "N013",
@@ -63,7 +63,7 @@
     "status": "answered",
     "cited_passage": "F12",
     "answer": "DGI&P کے صفحے کے مطابق 15 سال سے کم عمر بچوں کو صرف پانچ سال کی میعاد والا پاسپورٹ جاری کیا جاتا ہے۔",
-    "latency_ms": 31.63
+    "latency_ms": 40.23
   },
   {
     "qid": "N017",
@@ -85,7 +85,7 @@
     "status": "answered",
     "cited_passage": "F05",
     "answer": "For a lost passport, the applicant should bring a police report about the lost passport that mentions the previous passport number.",
-    "latency_ms": 46.14
+    "latency_ms": 49.26
   },
   {
     "qid": "N018",
@@ -107,7 +107,7 @@
     "status": "abstained",
     "cited_passage": null,
     "answer": "Matlooba maloomat official record mein dastyab nahi hain, is liye system ghalat bayani se bachne ke liye jawab deny se qasir hai.",
-    "latency_ms": 27.52
+    "latency_ms": 48.41
   },
   {
     "qid": "N020",
@@ -129,7 +129,7 @@
     "status": "answered",
     "cited_passage": "F09",
     "answer": "Walidain ki talaq ya alaidgi ki soorat mein adalat ke jari karda custody papers layen. Doosray walid/walida ki ijazat ya stamp paper par tasdeeq shuda ijazat nama darkar ho sakta hai.",
-    "latency_ms": 33.82
+    "latency_ms": 47.83
   },
   {
     "qid": "N023",
@@ -151,7 +151,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 33.3
+    "latency_ms": 45.91
   },
   {
     "qid": "N024",
@@ -173,7 +173,7 @@
     "status": "answered",
     "cited_passage": "F13",
     "answer": "The DGI&P page lists 21 working days for normal MRP processing after successful processing; courier delivery time is excluded from the stated timeframe.",
-    "latency_ms": 23.58
+    "latency_ms": 47.57
   },
   {
     "qid": "N025",
@@ -195,7 +195,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 32.33
+    "latency_ms": 42.59
   },
   {
     "qid": "SV001",
@@ -217,7 +217,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 25.48
+    "latency_ms": 40.64
   },
   {
     "qid": "SV002",
@@ -239,7 +239,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 28.3
+    "latency_ms": 45.45
   },
   {
     "qid": "SV003",
@@ -261,7 +261,7 @@
     "status": "answered",
     "cited_passage": "F03",
     "answer": "Sarkari, semi-government ya autonomous idaron ke mulazmeen ko apne mutalliqah department se No Objection Certificate (NOC) lana zaroori hota hai.",
-    "latency_ms": 24.11
+    "latency_ms": 66.51
   },
   {
     "qid": "SV004",
@@ -283,7 +283,7 @@
     "status": "answered",
     "cited_passage": "F04",
     "answer": "Dual nationality walay shehri apna ghair mulki passport aur photocopy sath layen aur passport declaration form mein iska indraj zaroor karein.",
-    "latency_ms": 26.9
+    "latency_ms": 50.35
   },
   {
     "qid": "SV005",
@@ -305,7 +305,7 @@
     "status": "answered",
     "cited_passage": "F05",
     "answer": "Passport gum honay ki soorat mein police report layen jis par puranay passport ka number wazeh darj ho.",
-    "latency_ms": 32.86
+    "latency_ms": 45.61
   },
   {
     "qid": "SV006",
@@ -327,7 +327,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 32.14
+    "latency_ms": 40.0
   },
   {
     "qid": "SV007",
@@ -349,7 +349,7 @@
     "status": "answered",
     "cited_passage": "F07",
     "answer": "10 saal ya us se baray minor bachay ke liye fingerprints aur tasweer wala updated CRC ya Juvenile Card aur photocopy darkar hoti hai.",
-    "latency_ms": 30.66
+    "latency_ms": 40.26
   },
   {
     "qid": "SV008",
@@ -371,7 +371,7 @@
     "status": "answered",
     "cited_passage": "F08",
     "answer": "Minor ke liye dono walidain ke original valid CNIC ya passport aur unki photocopies darkar hain. Bachay ke sath walidain mein se aik ya court ka muqarrar karda qanooni guardian hona zaroori hai.",
-    "latency_ms": 30.78
+    "latency_ms": 43.65
   },
   {
     "qid": "SV009",
@@ -393,7 +393,7 @@
     "status": "answered",
     "cited_passage": "F09",
     "answer": "Walidain ki talaq ya alaidgi ki soorat mein adalat ke jari karda custody papers layen. Doosray walid/walida ki ijazat ya stamp paper par tasdeeq shuda ijazat nama darkar ho sakta hai.",
-    "latency_ms": 29.68
+    "latency_ms": 66.54
   },
   {
     "qid": "SV010",
@@ -415,7 +415,7 @@
     "status": "answered",
     "cited_passage": "F10",
     "answer": "Agar walidain mein se kisi aik ki wafat ho chuki ho to unka original death certificate aur photocopy pesh karna hogi.",
-    "latency_ms": 27.48
+    "latency_ms": 41.91
   },
   {
     "qid": "SV011",
@@ -437,7 +437,7 @@
     "status": "answered",
     "cited_passage": "F11",
     "answer": "Aam machine readable passport (MRP) 5 saal ya 10 saal ki validity ke liye jari kiya jata hai.",
-    "latency_ms": 29.41
+    "latency_ms": 48.71
   },
   {
     "qid": "SV012",
@@ -459,7 +459,7 @@
     "status": "abstained",
     "cited_passage": null,
     "answer": "Matlooba maloomat official record mein dastyab nahi hain, is liye system ghalat bayani se bachne ke liye jawab deny se qasir hai.",
-    "latency_ms": 31.51
+    "latency_ms": 35.09
   },
   {
     "qid": "SV013",
@@ -481,7 +481,7 @@
     "status": "answered",
     "cited_passage": "F13",
     "answer": "Normal MRP processing ke liye kamyab processing ke baad 21 working days lagtay hain; courier ka waqt is ke ilawa hota hai.",
-    "latency_ms": 26.62
+    "latency_ms": 33.55
   },
   {
     "qid": "SV014",
@@ -503,7 +503,7 @@
     "status": "answered",
     "cited_passage": "F14",
     "answer": "Urgent MRP processing ke liye kamyab processing ke baad 5 working days lagtay hain.",
-    "latency_ms": 28.35
+    "latency_ms": 33.02
   },
   {
     "qid": "SV015",
@@ -525,7 +525,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 24.56
+    "latency_ms": 31.75
   },
   {
     "qid": "SV016",
@@ -547,7 +547,7 @@
     "status": "answered",
     "cited_passage": "F16",
     "answer": "Passport expiry se pehle kisi bhi waqt renew karwaya ja sakta hai jab zaroorat ho.",
-    "latency_ms": 29.93
+    "latency_ms": 43.48
   },
   {
     "qid": "SV017",
@@ -569,7 +569,7 @@
     "status": "answered",
     "cited_passage": "F17",
     "answer": "Passport renewal ke liye online apply kiya ja sakta hai agar purana passport expire ho chuka ho ya 1 saal se kam validity bachi ho.",
-    "latency_ms": 31.39
+    "latency_ms": 31.41
   },
   {
     "qid": "SV018",
@@ -591,7 +591,7 @@
     "status": "answered",
     "cited_passage": "F18",
     "answer": "Online portal par renewal ki sahulat un afrad ke liye hai jinke passport mein koi tabdeeli (modification) na ho.",
-    "latency_ms": 29.0
+    "latency_ms": 32.41
   },
   {
     "qid": "SV019",
@@ -613,7 +613,7 @@
     "status": "answered",
     "cited_passage": "F19",
     "answer": "Online portal par passport fees credit card, debit card ya digital banking se ada ki ja sakti hai.",
-    "latency_ms": 30.68
+    "latency_ms": 29.24
   },
   {
     "qid": "SV020",
@@ -635,7 +635,7 @@
     "status": "answered",
     "cited_passage": "F20",
     "answer": "Online jama karwayi gayi fee kisi soorat wapis (refund) nahi hoti.",
-    "latency_ms": 29.66
+    "latency_ms": 35.25
   },
   {
     "qid": "SV021",
@@ -657,7 +657,7 @@
     "status": "answered",
     "cited_passage": "F24",
     "answer": "Applicant ko apne CNIC/NICOP par darj mustaqil ya mojooda address ke mutabiq mutalliqah regional passport office jana hota hai.",
-    "latency_ms": 28.49
+    "latency_ms": 30.82
   },
   {
     "qid": "SV022",
@@ -679,7 +679,7 @@
     "status": "answered",
     "cited_passage": "F22",
     "answer": "Photo ke baad agli stage biometrics (fingerprints) ki hoti hai jahan ungliyon ke nishan liye jatay hain.",
-    "latency_ms": 27.51
+    "latency_ms": 33.35
   },
   {
     "qid": "SV023",
@@ -701,7 +701,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 22.0
+    "latency_ms": 24.23
   },
   {
     "qid": "SV024",
@@ -723,7 +723,7 @@
     "status": "answered",
     "cited_passage": "F24",
     "answer": "Applicant ko apne CNIC/NICOP par darj mustaqil ya mojooda address ke mutabiq mutalliqah regional passport office jana hota hai.",
-    "latency_ms": 22.97
+    "latency_ms": 33.25
   },
   {
     "qid": "SV025",
@@ -745,7 +745,7 @@
     "status": "answered",
     "cited_passage": "F25",
     "answer": "Pakistan mein aam taur par teen aqsam ke passport hain: Ordinary (Green), Official (Blue), aur Diplomatic (Red).",
-    "latency_ms": 21.2
+    "latency_ms": 25.94
   },
   {
     "qid": "SV026",
@@ -767,7 +767,7 @@
     "status": "answered",
     "cited_passage": "F26",
     "answer": "Agar CNIC par sirf aik naam darj ho to e-Passport ke liye wahi naam 'Given Name' ke taur par likha jayega.",
-    "latency_ms": 27.42
+    "latency_ms": 35.14
   },
   {
     "qid": "SV027",
@@ -789,7 +789,7 @@
     "status": "answered",
     "cited_passage": "F27",
     "answer": "E-Passport ke liye Fast Track sahulat dastiyab hai jo ke designated passport dafatir mein fraham ki jati hai.",
-    "latency_ms": 27.41
+    "latency_ms": 34.71
   },
   {
     "qid": "SV028",
@@ -811,7 +811,7 @@
     "status": "answered",
     "cited_passage": "F28",
     "answer": "Agar passport ke safhay (pages) khatam ho jayen to naya passport banwana parta hai (fresh booklet issue hoti hai).",
-    "latency_ms": 27.94
+    "latency_ms": 40.72
   },
   {
     "qid": "SV029",
@@ -833,7 +833,7 @@
     "status": "answered",
     "cited_passage": "F29",
     "answer": "Agar passport par naam tabdeel karwana ho to pehle NADRA CNIC par naam update karwana zaroori hai.",
-    "latency_ms": 31.55
+    "latency_ms": 53.31
   },
   {
     "qid": "SV030",
@@ -855,7 +855,7 @@
     "status": "answered",
     "cited_passage": "F01",
     "answer": "Pakistani aam passport tamam Pakistani shehriyon ko zaroori qawaid aur sharaait mukammal karnay ke baad jari kiya jata hai.",
-    "latency_ms": 24.76
+    "latency_ms": 37.12
   },
   {
     "qid": "N001",
@@ -878,7 +878,7 @@
     "status": "abstained",
     "abstention_reason": "ambiguous",
     "answer": "Sawal ghair wazeh (ambiguous) hai: Passport fees ka inhisar pages (36, 72, 100), validity (5 ya 10 saal), aur priority (Normal, Urgent, Fast Track) par hota hai. Barah-e-karam apna matlooba category wazeh karein.",
-    "latency_ms": 21.14
+    "latency_ms": 32.67
   },
   {
     "qid": "N002",
@@ -901,7 +901,7 @@
     "status": "abstained",
     "abstention_reason": "ambiguous",
     "answer": "Ambiguous Query: Passport fees depend on multiple parameters: booklet size (36, 72, or 100 pages), validity (5 or 10 years), and service tier (Normal, Urgent, or Fast Track). Please specify your intended passport category to view exact official fees.",
-    "latency_ms": 22.8
+    "latency_ms": 30.41
   },
   {
     "qid": "N003",
@@ -924,7 +924,7 @@
     "status": "abstained",
     "abstention_reason": "insufficient_evidence",
     "answer": "مطلوبہ معلومات کی تصدیق سرکاری دستاویزات سے نہیں ہو سکی، اس لیے غلط بیانی سے بچنے کے لیے سسٹم جواب دینے سے معذرت خواہ ہے۔",
-    "latency_ms": 22.8
+    "latency_ms": 29.79
   },
   {
     "qid": "N004",
@@ -947,7 +947,7 @@
     "status": "abstained",
     "abstention_reason": "unsupported_personal",
     "answer": "General knowledge base se individual passport status ya delivery date confirm nahi ki ja sakti. Tracking ke liye 9988 par SMS karein ya passport office se rabta karein.",
-    "latency_ms": 29.3
+    "latency_ms": 29.9
   },
   {
     "qid": "N005",
@@ -970,7 +970,7 @@
     "status": "abstained",
     "abstention_reason": "unsupported_personal",
     "answer": "Individual Application Notice: The general knowledge base does not hold individual applicant tracking records or delivery guarantees. For personal tracking, please use official DGI&P SMS tracking (9988) or visit your regional passport office.",
-    "latency_ms": 30.41
+    "latency_ms": 31.72
   },
   {
     "qid": "N006",
@@ -993,7 +993,7 @@
     "status": "abstained",
     "abstention_reason": "unsupported_personal",
     "answer": "سرکاری عمومی رہنمائی سے انفرادی درخواست یا ترسیل کا اسٹیٹس معلوم نہیں کیا جا سکتا۔ ذاتی ٹریکنگ کے لیے 9988 پر ایس ایم ایس کریں یا متعلقہ دفتر سے رابطہ کریں۔",
-    "latency_ms": 25.93
+    "latency_ms": 30.13
   },
   {
     "qid": "N007",
@@ -1016,7 +1016,7 @@
     "status": "abstained",
     "abstention_reason": "out_of_domain",
     "answer": "Out-of-Domain Query: This topic falls outside the official Pakistani public-service knowledge base (DGI&P Passport & Identity Services). Multilingual E-Sahulat AI only answers verified official public service inquiries.",
-    "latency_ms": 28.56
+    "latency_ms": 24.53
   },
   {
     "qid": "N008",
@@ -1039,7 +1039,7 @@
     "status": "abstained",
     "abstention_reason": "out_of_domain",
     "answer": "Yeh sawal official public service domain se bahir hai. Multilingual E-Sahulat AI sirf verified sarkari procedure ke baray mein rehnumai fraham karta hai.",
-    "latency_ms": 28.21
+    "latency_ms": 27.35
   },
   {
     "qid": "N009",
@@ -1062,7 +1062,7 @@
     "status": "abstained",
     "abstention_reason": "out_of_domain",
     "answer": "یہ سوال سرکاری پاسپورٹ اور عوامی خدمات کے علم سے باہر ہے۔ ای سہولت اے آئی صرف مصدقہ سرکاری طریقہ کار کے جوابات دیتا ہے۔",
-    "latency_ms": 24.28
+    "latency_ms": 30.25
   },
   {
     "qid": "N010",
@@ -1085,7 +1085,7 @@
     "status": "abstained",
     "abstention_reason": "unsupported_generalization",
     "answer": "Category Specificity Required: There is no single uniform fee for all applicants. Fees depend strictly on page count (36/72/100), validity (5/10 years), and urgency.",
-    "latency_ms": 28.06
+    "latency_ms": 38.12
   },
   {
     "qid": "N014",
@@ -1108,7 +1108,7 @@
     "status": "abstained",
     "abstention_reason": "prompt_injection",
     "answer": "Security Alert: Prompt manipulation or adversarial request detected. System answers only with traceable official evidence.",
-    "latency_ms": 24.96
+    "latency_ms": 38.23
   },
   {
     "qid": "N015",
@@ -1131,7 +1131,7 @@
     "status": "abstained",
     "abstention_reason": "prompt_injection",
     "answer": "Matlooba maloomat official record mein dastyab nahi hain, is liye system ghalat bayani se bachne ke liye jawab deny se qasir hai.",
-    "latency_ms": 21.52
+    "latency_ms": 35.6
   },
   {
     "qid": "N016",
@@ -1154,7 +1154,7 @@
     "status": "abstained",
     "abstention_reason": "prompt_injection",
     "answer": "مطلوبہ معلومات کی تصدیق سرکاری دستاویزات سے نہیں ہو سکی، اس لیے غلط بیانی سے بچنے کے لیے سسٹم جواب دینے سے معذرت خواہ ہے۔",
-    "latency_ms": 22.69
+    "latency_ms": 33.74
   },
   {
     "qid": "N019",
@@ -1177,7 +1177,7 @@
     "status": "abstained",
     "abstention_reason": "unsupported_personal",
     "answer": "Individual Application Notice: The general knowledge base does not hold individual applicant tracking records or delivery guarantees. For personal tracking, please use official DGI&P SMS tracking (9988) or visit your regional passport office.",
-    "latency_ms": 25.0
+    "latency_ms": 37.91
   },
   {
     "qid": "N021",
@@ -1200,7 +1200,7 @@
     "status": "abstained",
     "abstention_reason": "time_sensitive",
     "answer": "Time-Sensitive Verification: Official fee schedules are revised periodically by the Government of Pakistan. While our indexed sources reflect official published rates, please verify against the live DGI&P fee portal before making bank deposits.",
-    "latency_ms": 25.17
+    "latency_ms": 30.75
   },
   {
     "qid": "N022",
@@ -1223,7 +1223,7 @@
     "status": "abstained",
     "abstention_reason": "time_sensitive",
     "answer": "حکومت پاکستان کی جانب سے فیس کا شیڈول وقتاً فوقتاً تبدیل ہوتا رہتا ہے۔ تازہ ترین فیس کے لیے ڈی جی آئی پی کی ویب سائٹ ملاحظہ کریں۔",
-    "latency_ms": 23.74
+    "latency_ms": 29.75
   },
   {
     "qid": "N026",
@@ -1246,7 +1246,7 @@
     "status": "abstained",
     "abstention_reason": "unsupported_personal",
     "answer": "Individual Application Notice: The general knowledge base does not hold individual applicant tracking records or delivery guarantees. For personal tracking, please use official DGI&P SMS tracking (9988) or visit your regional passport office.",
-    "latency_ms": 22.68
+    "latency_ms": 37.58
   },
   {
     "qid": "N027",
@@ -1269,7 +1269,7 @@
     "status": "abstained",
     "abstention_reason": "unsupported_personal",
     "answer": "سرکاری عمومی رہنمائی سے انفرادی درخواست یا ترسیل کا اسٹیٹس معلوم نہیں کیا جا سکتا۔ ذاتی ٹریکنگ کے لیے 9988 پر ایس ایم ایس کریں یا متعلقہ دفتر سے رابطہ کریں۔",
-    "latency_ms": 24.39
+    "latency_ms": 33.69
   },
   {
     "qid": "N028",
@@ -1292,7 +1292,7 @@
     "status": "abstained",
     "abstention_reason": "unsupported_action",
     "answer": "Yeh prototype sirf maloomati assistant hai aur live appointment book nahi kar sakta. Barah-e-karam DGIP portal use karein.",
-    "latency_ms": 25.22
+    "latency_ms": 35.17
   },
   {
     "qid": "N029",
@@ -1315,7 +1315,7 @@
     "status": "abstained",
     "abstention_reason": "conflicting_evidence",
     "answer": "Procedural Notice: Where differing timelines appear across historical web pages, DGI&P standard rules specify 21 working days for Normal and 5 days for Urgent processing. Please consult the most recent live DGI&P notifications for current processing.",
-    "latency_ms": 29.2
+    "latency_ms": 36.44
   },
   {
     "qid": "N030",
@@ -1338,6 +1338,6 @@
     "status": "abstained",
     "abstention_reason": "unsafe_or_out_of_scope",
     "answer": "Security Policy: Multilingual E-Sahulat AI cannot assist with bypassing official verification or regulations. Please adhere to lawful DGI&P application procedures.",
-    "latency_ms": 25.6
+    "latency_ms": 30.17
   }
 ]

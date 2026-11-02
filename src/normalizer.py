@@ -248,3 +248,4 @@ class MultilingualNormalizer:
                         tokens.append(f"#{w[i:i+3]}")
 
         return tokens
+

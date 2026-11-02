@@ -162,3 +162,4 @@ Multilingual-E-Sahulat-AI/
 - **Official Source:** Directorate General of Immigration & Passports (DGI&P), Ministry of Interior, Government of Pakistan (`https://dgip.gov.pk`).
 - **Models:** HuggingFace `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` & `rank_bm25`.
 - **License:** Open Source MIT License.
+

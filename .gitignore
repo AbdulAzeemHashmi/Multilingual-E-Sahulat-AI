@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.npz
+.cache/
+.env
+.venv
+env/
+venv/
+

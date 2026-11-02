@@ -115,3 +115,4 @@ def build_knowledge_base_and_splits(raw_filepath: str, output_dir: str = 'data')
 if __name__ == '__main__':
     raw_path = 'Multilingual E-Sahulat AI_Hackathon_Dataset.txt'
     build_knowledge_base_and_splits(raw_path)
+

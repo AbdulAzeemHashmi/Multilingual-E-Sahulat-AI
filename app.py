@@ -395,3 +395,4 @@ with tab4:
     - **Knowledge Base (JSON):** `data/knowledge_base.json`
     - **GitHub Repository:** [https://github.com/AbdulAzeemHashmi/Multilingual-E-Sahulat-AI](https://github.com/AbdulAzeemHashmi/Multilingual-E-Sahulat-AI)
     """)
+
