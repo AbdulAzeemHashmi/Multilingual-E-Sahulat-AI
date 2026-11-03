@@ -264,15 +264,7 @@ python -m unittest discover tests
 
 Runs all 18 tests for normalization, retrieval modes, traceability, and abstention guardrails.
 
-### 6. Generate the PDF report
-
-```bash
-python src/generate_report.py
-```
-
-Creates `reports/Multilingual_E_Sahulat_AI_Technical_Report.pdf`.
-
-### 7. Start the web app
+### 6. Start the web app
 
 On Windows PowerShell (recommended):
 
